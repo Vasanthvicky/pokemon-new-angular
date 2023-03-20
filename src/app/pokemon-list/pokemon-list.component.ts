@@ -17,7 +17,14 @@ export class PokemonListComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.dataService.getPokemonApi().subscribe((response: any) => {
+    this.getPokemons;
+    console.log(this.getPokemons())
+
+  }
+
+  // Get Pokemons 
+  getPokemons() {
+    this.dataService.getPokemonApi(10, this.page + 0).subscribe((response: any) => {
       // console.log(response);
       this.totalPokemons = response.count;
       response.results.forEach(result => {
@@ -28,5 +35,4 @@ export class PokemonListComponent implements OnInit {
       })
     })
   }
-
 }
