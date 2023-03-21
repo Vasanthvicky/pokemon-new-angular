@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { DataService } from '../service/data.service';
 
 @Component({
@@ -13,7 +14,8 @@ export class PokemonListComponent implements OnInit {
   totalPokemons: number;
 
   constructor(
-    private dataService: DataService
+    private dataService: DataService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -34,5 +36,10 @@ export class PokemonListComponent implements OnInit {
         })
       })
     })
+  }
+
+  pokemonDetailsView(pokemon: any) {
+    this.router.navigate(['../pokemon-view', pokemon.id]);
+    console.log(pokemon)
   }
 }
