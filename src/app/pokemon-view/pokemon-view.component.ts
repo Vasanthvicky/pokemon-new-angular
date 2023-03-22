@@ -29,10 +29,9 @@ export class PokemonViewComponent implements OnInit {
     this.dataService.getSpeisesData(this.pokemonDetailsId).subscribe((response)=> {
       this.pokemonDetails = response;
       console.log(response);
-      
     });
   } 
   backNavigate() {
-    this.router.navigate(['../pokemon-list'])
+    this.router.navigate(['../pokemon-list']);
   }
 }
