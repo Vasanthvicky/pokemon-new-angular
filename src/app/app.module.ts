@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { PokemonViewComponent } from './pokemon-view/pokemon-view.component';
+import { MyLibModule } from 'projects/my-lib/src/public-api';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PokemonViewComponent } from './pokemon-view/pokemon-view.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    MyLibModule
   ],
   providers: [],
   bootstrap: [AppComponent]
