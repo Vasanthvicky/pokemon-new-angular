@@ -8,4 +8,4 @@ export * from './lib/my-lib.module';
 
 export * from './lib/logger.service';
 
-export * from './lib/counter/counter.component'
+export * from '../counter/counter.component'

@@ -22,4 +22,7 @@ export class AppComponent {
   pokemonView() {
     this.router.navigate(['./pokemon-view']);
   }
+  userDataView() {
+    this.router.navigate(['./data-list'])
+  }
 }

@@ -9,6 +9,7 @@ import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { PokemonViewComponent } from './pokemon-view/pokemon-view.component';
 import { MyLibModule } from 'projects/my-lib/src/public-api';
+import { DataListComponent } from 'projects/my-lib/data-list.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MyLibModule } from 'projects/my-lib/src/public-api';
     AppRoutingModule,
     HttpClientModule,
     NgxPaginationModule,
-    MyLibModule
+    MyLibModule,
+    DataListComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
