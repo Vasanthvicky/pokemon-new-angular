@@ -6,8 +6,14 @@
 </section>
 <article class="pet-list">
 <ul>
-    <li *ngFor="let pockemonDetail of pokemonLists">
-        {{pockemonDetail.name}}
+    <li *ngFor="let userDetail of userDataLists">
+        {{userDetail.name}}
+        <div class="card-view-block">
+            <img [src]="createProfiles(userDataLists?.name)" alt="profile" class="circle-profile">
+            <div *ngIf="showProfile" class="show-profile-name">
+                {{userDataLists.name}}
+            </div>
+        </div>
     </li>
 </ul>
 </article>
