@@ -11,6 +11,8 @@ import { PokemonViewComponent } from './pokemon-view/pokemon-view.component';
 import { MyLibModule } from 'projects/my-lib/src/public-api';
 import { DataListComponent } from 'projects/my-lib/data-list.component';
 import { ProfileInfoComponent } from './profile-info/profile-info.component';
+import { TopNavigationComponent } from './top-navigation/top-navigation.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { ProfileInfoComponent } from './profile-info/profile-info.component';
     HeaderComponent,
     PokemonListComponent,
     PokemonViewComponent,
-    ProfileInfoComponent
+    ProfileInfoComponent,
+    TopNavigationComponent,
+    SideNavComponent
   ],
   imports: [
     BrowserModule,
