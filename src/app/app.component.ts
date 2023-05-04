@@ -2,6 +2,10 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { LoggerService } from '../../projects/my-lib/src/lib/logger.service';
 
+interface SideNavToggle {
+  screenWidth: number;
+  collapsed: boolean;
+}
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -16,7 +20,7 @@ export class AppComponent {
     this.loggerService.log("Hello world");
   }
 
-  pokemonList() {
+  /* pokemonList() {
     this.router.navigate(['./pokemon-list']);
   }
   pokemonView() {
@@ -24,5 +28,11 @@ export class AppComponent {
   }
   userDataView() {
     this.router.navigate(['./data-list'])
+  } */
+  isSideNavCollapsed = false;
+  screenWidth = 0;
+  onToggleSideNav(data: SideNavToggle):void {
+    this.screenWidth = data.screenWidth;
+    this.isSideNavCollapsed = data.collapsed
   }
 }

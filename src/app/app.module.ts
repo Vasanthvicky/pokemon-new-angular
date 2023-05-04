@@ -13,6 +13,10 @@ import { DataListComponent } from 'projects/my-lib/data-list.component';
 import { ProfileInfoComponent } from './profile-info/profile-info.component';
 import { TopNavigationComponent } from './top-navigation/top-navigation.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
+import { RouterComponent } from './router/router.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { SideNavComponent } from './side-nav/side-nav.component';
     PokemonViewComponent,
     ProfileInfoComponent,
     TopNavigationComponent,
-    SideNavComponent
+    SideNavComponent,
+    RouterComponent,
+    ProjectsComponent,
+    AboutMeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

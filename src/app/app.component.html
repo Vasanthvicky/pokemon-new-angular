@@ -2,18 +2,20 @@
 <app-pokemon-list></app-pokemon-list> -->
 
 
-<app-header></app-header>
-<button (click)="pokemonList()">Pokemon List</button>
+<!-- <app-header></app-header> -->
+<!-- <button (click)="pokemonList()">Pokemon List</button> -->
 <!-- <button (click)="pokemonView()">Pokemon View</button> -->
-<button (click)="userDataView()"> User Data LIst</button>
-<lib-my-lib></lib-my-lib>
+<!-- <button (click)="userDataView()"> User Data LIst</button> -->
+<!-- <lib-my-lib></lib-my-lib> -->
 <!-- <app-counter></app-counter>
  --><!-- <app-data-list></app-data-list>
  -->
- <app-side-nav></app-side-nav>
+ <app-side-nav (onToggleSideNav)="onToggleSideNav($event)"></app-side-nav>
 <!--  <app-top-navigation></app-top-navigation>
  <app-profile-info></app-profile-info> -->
- <router-outlet></router-outlet>
+
+ <app-router [collapsed]="isSideNavCollapsed" [screenWidth]="screenWidth"></app-router>
+ <!-- <router-outlet></router-outlet> -->
 <!-- 
  <h1 class="text-3xl font-bold underline">
     Hello world!
