@@ -1,22 +1,23 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { DataListComponent } from 'projects/my-lib/data-list.component';
+import { MyLibModule } from 'projects/my-lib/src/public-api';
+import { AboutMeComponent } from './about-me/about-me.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ContactComponent } from './contact/contact.component';
 import { HeaderComponent } from './header/header.component';
 import { PokemonListComponent } from './pokemon-list/pokemon-list.component';
-import { NgxPaginationModule } from 'ngx-pagination';
 import { PokemonViewComponent } from './pokemon-view/pokemon-view.component';
-import { MyLibModule } from 'projects/my-lib/src/public-api';
-import { DataListComponent } from 'projects/my-lib/data-list.component';
 import { ProfileInfoComponent } from './profile-info/profile-info.component';
-import { TopNavigationComponent } from './top-navigation/top-navigation.component';
-import { SideNavComponent } from './side-nav/side-nav.component';
-import { RouterComponent } from './router/router.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { AboutMeComponent } from './about-me/about-me.component';
-import { ContactComponent } from './contact/contact.component';
+import { RouterComponent } from './router/router.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
+import { TopNavigationComponent } from './top-navigation/top-navigation.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ContactComponent } from './contact/contact.component';
     HttpClientModule,
     NgxPaginationModule,
     MyLibModule,
-    DataListComponent
+    DataListComponent,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
