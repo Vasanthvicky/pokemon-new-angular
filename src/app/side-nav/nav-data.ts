@@ -25,9 +25,9 @@ export const navbarData = [
         label: 'Pokemon List'
     },
     {
-        routeLink: 'pokemon-view',
+        routeLink: 'profile-info',
         icon: 'fal fa-home',
-        label: 'Pokemon View'
+        label: 'Profile Info'
     },
     {
         routeLink: 'data-list',
