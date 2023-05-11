@@ -23,7 +23,11 @@
     --menu-background: #01011D;
 
     --content-light: #9999A5;
-    --content-light-dark: #fff
+    --content-light-dark: #ffffff;
+    --light-white: #dfdfdf;
+    --scrollbar-color-gray: #c3c3c3;
+    --scrollbar-backround: #707070;
+
     //color: #84A98C;
     //color: #272727;
     //color: #CAD2C5;
@@ -42,4 +46,21 @@ body {
 
 .container-block {
     padding-top: 2rem;
+}
+
+// Scrollbar CSS
+::-webkit-scrollbar {
+    background: $color-light-white;
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $text-color-white;
+    border: solid $scrollbar-color-gray 7px;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: $text-color-white;
 }

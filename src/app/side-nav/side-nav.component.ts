@@ -1,5 +1,9 @@
 import { Component, OnInit, Output, EventEmitter, HostListener } from '@angular/core';
 import { navbarData } from './nav-data';
+import * as fabIcon from "@fortawesome/free-brands-svg-icons";
+import * as fabIcons  from "@fortawesome/free-solid-svg-icons";
+import {faWindowClose}  from "@fortawesome/free-solid-svg-icons";
+
 
 interface SideNavToggle {
   screenWidth: number;
@@ -30,10 +34,21 @@ export class SideNavComponent implements OnInit {
     }
   }
 
+  // myLinkedInIcon = faLinkedin;
+  // myGithubIcon = faGithub;
+  // faDownload = faDownload;
+  closedIcon = faWindowClose;
+
   constructor() { }
 
   ngOnInit(): void {
     this.screenWidth = window.innerWidth;
+  }
+
+  printIcon(daa){
+    console.log(fabIcons[daa]);
+    return fabIcons[daa]
+    
   }
 
   toggleCollapse():void {

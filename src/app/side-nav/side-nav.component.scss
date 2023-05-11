@@ -27,7 +27,7 @@
         border: none;
     }
     .logo-text {
-        margin-left: 1.5rem;
+        margin-left: 0.5rem;
         font-size: 18px;
         font-weight: 700;
         color: #fff;
@@ -40,6 +40,9 @@
         border-radius: 50%;
         background-color: transparent;
         border: none;
+        color: #f3f3f3;
+        position: absolute;
+        right: 10px;
         .fa-times {
             color: #fff;
             font-size: 24px;
@@ -54,12 +57,13 @@
     list-style: none;
     padding: 0.98rem;
     margin: 0;
-    display: flex;
+    margin-top: 8px;
+    display: block;
     flex-direction: column;
     align-items: center;
     height: calc(100% - 0.625rem);
     cursor: pointer;
-
+    overflow-y: auto;
     .side-nav-item {
         width: 100%;
         margin-bottom: 0.625rem;
@@ -73,7 +77,7 @@
         transition: all .5s ease;
         border-radius: 0.625rem;
         .side-nav-link-icon {
-            font-size: 22px;
+            font-size: 18px;
             width: 2rem;
             min-width: 2rem;
             margin: 0 0.5rem;
@@ -86,6 +90,7 @@
 }
 
 .side-nav-items {
+    margin: 5px 0;
     &:hover {
         .side-nav-link {
             background-color: #fff;
@@ -97,6 +102,7 @@
 
 .active {
     background-color: #fff;
+    color: #f3f3f3;
     .side-nav-link-icon,
     .side-nav-link-text {
         color: #000;

@@ -1,37 +1,32 @@
 export const navbarData = [
     {
         routeLink: 'about-me',
-        icon: 'fal fa-home',
+        icon: 'faUser',
         label: 'About'
     },
     {
         routeLink: 'projects',
-        icon: 'fal fa-box-open',
+        icon: 'faDiagramProject',
         label: 'Projects'
     },
     {
         routeLink: 'contact',
-        icon: 'fal fa-chart-bar',
+        icon: 'faContactCard',
         label: 'Contact'
     },
     {
-        routeLink: 'header',
-        icon: 'fal fa-home',
-        label: 'Header'
-    },
-    {
         routeLink: 'pokemon-list',
-        icon: 'fal fa-home',
+        icon: 'faVrCardboard',
         label: 'Pokemon List'
     },
-    {
-        routeLink: 'profile-info',
-        icon: 'fal fa-home',
-        label: 'Profile Info'
-    },
+    // {
+    //     routeLink: 'profile-info',
+    //     icon: 'faArrowAltCircleRight',
+    //     label: 'Profile Info'
+    // },
     {
         routeLink: 'data-list',
-        icon: 'fal fa-home',
+        icon: 'faDatabase',
         label: 'Data List'
     }
 ]
