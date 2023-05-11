@@ -1,19 +1,23 @@
-<p>data-list works!</p>
-
-
-<section>
+<div class="container-block">
+  <p>data-list works!</p>
+  <section>
     <h2>Discover Pets to walk near you</h2>
-</section>
-<article class="pet-list">
-<ul>
-    <li *ngFor="let userDetail of userDataLists">
-        {{userDetail.name}}
+  </section>
+  <article class="pet-list">
+    <ul>
+      <li *ngFor="let userDetail of userDataLists">
+        {{ userDetail.name }}
         <div class="card-view-block">
-            <img [src]="createProfiles(userDataLists?.name)" alt="profile" class="circle-profile">
-            <div *ngIf="showProfile" class="show-profile-name">
-                {{userDataLists.name}}
-            </div>
+          <img
+            [src]="createProfiles(userDataLists?.name)"
+            alt="profile"
+            class="circle-profile"
+          />
+          <div *ngIf="showProfile" class="show-profile-name">
+            {{ userDataLists.name }}
+          </div>
         </div>
-    </li>
-</ul>
-</article>
+      </li>
+    </ul>
+  </article>
+</div>
