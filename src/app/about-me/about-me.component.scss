@@ -1,0 +1,23 @@
+.about-section {
+    display: flex;
+}
+
+.about-details {
+    display: block;
+}
+
+.about-profile {
+    .about-profile-pic {
+        background-image: url("https://firebasestorage.googleapis.com/v0/b/vigneshvasanthportfolio.appspot.com/o/Profile-img%2F0Y9A8121.JPG?alt=media&token=76c07139-91fb-4f89-9d45-11c5a2e0aca5");     
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: block;
+        width: 100%;
+        padding: 200px;
+        border-radius: 50%;
+    }
+    .my-profile {
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+}

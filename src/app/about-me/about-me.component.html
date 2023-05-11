@@ -37,7 +37,10 @@
       </li>
     </ul>
   </div>
-  <div class="about-profile">
-    <img src="https://firebasestorage.googleapis.com/v0/b/vigneshvasanthportfolio.appspot.com/o/Profile-img%2FProfile-Male-PNG.png?alt=media&token=87d3b75e-71bc-4830-a919-3d8044ab03eb" alt="">
+  <div class="about-profile" *ngFor="let imgItem of profilePic">
+    <div class="about-profile-pic">
+      <!-- <img class="my-profile" [src]="imgItem.src" alt=""> -->
+    </div>
+    <p>{{ imgItem.name }}</p>
 </div>
 </section>
