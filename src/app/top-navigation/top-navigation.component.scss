@@ -1,0 +1,15 @@
+.navbar {
+    background-color: #263238;
+    height: 60px;
+    padding: 5px 20px;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    color: #fff;
+}
+
+.navbar-brand {
+    display: inline-block;
+}
