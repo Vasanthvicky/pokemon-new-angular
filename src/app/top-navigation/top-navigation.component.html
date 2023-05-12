@@ -16,7 +16,7 @@
       <div class="section-right float-right">
         <ul class="about-list">
           <li class="list-item" *ngFor="let topData of topNavDataList">
-            <a [routerLink]="[topData.routeLink]">{{topData.label}}</a>
+            <a class="router" [routerLink]="[topData.routeLink]" routerLinkActive="active">{{topData.label}}</a>
           </li>
         </ul>
       </div>
