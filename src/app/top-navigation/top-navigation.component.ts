@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { topNavData } from './top-nav-data'
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
@@ -13,6 +14,8 @@ export class TopNavigationComponent implements OnInit {
   myGithubIcon = faGithub;
   faDownload = faDownload;
 
+
+  topNavDataList = topNavData;
   constructor() { }
 
   ngOnInit(): void {

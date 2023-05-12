@@ -15,16 +15,8 @@
   
       <div class="section-right float-right">
         <ul class="about-list">
-          <li class="list-item">
-            <a href="">Blog</a>
-            <fa-icon [icon]="myLinkedInIcon">Images</fa-icon>
-            <fa-icon [icon]="myGithubIcon">Images</fa-icon>
-          </li>
-          <li class="list-item">
-            <a href="">Blog</a>
-          </li>
-          <li class="list-item">
-            <a href="">Blog</a>
+          <li class="list-item" *ngFor="let topData of topNavDataList">
+            <a [routerLink]="[topData.routeLink]">{{topData.label}}</a>
           </li>
         </ul>
       </div>
