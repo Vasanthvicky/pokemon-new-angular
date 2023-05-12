@@ -17,10 +17,12 @@ export class AboutMeComponent implements OnInit {
 
   constructor(private imgService: ImgDirectoryService){};
 
+  pageLoading = true;
+
   ngOnInit(): void {
     this.profilePic = this.imgService.myImg;
-    console.log(this.profilePic)
+    setTimeout(() => {
+      this.pageLoading = false;
+    }, 5000);
   }
-
-  
 }

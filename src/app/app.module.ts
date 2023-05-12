@@ -18,6 +18,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { RouterComponent } from './router/router.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { TopNavigationComponent } from './top-navigation/top-navigation.component';
+import { FullPageLoaderModule } from './full-page-loader/full-page-loader.module';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { TopNavigationComponent } from './top-navigation/top-navigation.componen
     NgxPaginationModule,
     MyLibModule,
     DataListComponent,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FullPageLoaderModule
   ],
   providers: [],
   bootstrap: [AppComponent]

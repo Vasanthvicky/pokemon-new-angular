@@ -1,5 +1,7 @@
+<app-full-page-loader *ngIf="pageLoading"></app-full-page-loader>
 <div class="container-block">
-  <section class="about-section">
+  <section class="about-section" *ngIf="!pageLoading">
+
     <div class="about-details">
       <h1 class="title">About Me</h1>
       <!-- <fa-icon [icon]="myLinkedInIcon">Images</fa-icon>
