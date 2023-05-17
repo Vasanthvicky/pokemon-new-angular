@@ -26,3 +26,18 @@
     font-weight: 900;
     text-decoration: underline;
 }
+
+.skills-block {
+    .skills {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        .skill-list {
+            width: 200px;
+            height: 200px;
+            margin: 40px 20px;
+            img {
+               
+            }
+        }
+    }
+}

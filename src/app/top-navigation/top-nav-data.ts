@@ -2,16 +2,18 @@ export const topNavData = [
     {
         routeLink : 'about-me',
         icon: 'faUser',
-        label: 'Blog'
+        label: 'Blog',
+        flag: 'brand'
     },
     {
         routeLink : 'about-me',
         icon: 'faUser',
-        label: 'Blog'
+        label: 'Skills',
+        flag: 'solid'
     },
     {
         routeLink : 'about-me',
         icon: 'faUser',
-        label: 'Blog'
+        label: 'Contact Us'
     },
 ]

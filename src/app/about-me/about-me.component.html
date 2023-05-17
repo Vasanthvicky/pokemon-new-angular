@@ -1,6 +1,6 @@
 <app-full-page-loader *ngIf="pageLoading"></app-full-page-loader>
-<div class="container-block">
-  <section class="about-section" *ngIf="!pageLoading">
+<div class="container-block" *ngIf="!pageLoading">
+  <section class="about-section">
 
     <div class="about-details">
       <h1 class="title">About Me</h1>
@@ -46,5 +46,17 @@
       </div>
       <!-- <p>{{ imgItem.name }}</p> -->
   </div>
+  </section>
+
+  <section>
+    <div class="skills-block">
+      <h2 class="title">Skills</h2>
+      <ul class="skills">
+        <li class="skill-list" *ngFor="let skilItem of skillPic">
+          <img [src]="skilItem.src" alt="">
+          <h3 class="text-center font-bold my-8">{{skilItem.name}}</h3>
+        </li>
+      </ul>
+    </div>
   </section>
 </div>
