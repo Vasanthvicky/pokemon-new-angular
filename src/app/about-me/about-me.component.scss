@@ -1,3 +1,5 @@
+@import '../../../src/variables.scss';
+
 .about-section {
     display: flex;
 }
@@ -15,6 +17,8 @@
         width: 100%;
         padding: 150px;
         border-radius: 50%;
+        position: relative;
+        top: 20%;
     }
     .my-profile {
         border-radius: 50%;
@@ -29,15 +33,37 @@
 
 .skills-block {
     .skills {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         .skill-list {
-            width: 200px;
-            height: 200px;
+            width: 100px;
+            height: 100px;
             margin: 40px 20px;
             img {
                
             }
         }
     }
+}
+
+.my-8 {
+    padding-top: 1rem;
+}
+
+.description {
+    li {
+        padding: 10px 0;
+    }
+}
+
+.smooth-scroll {
+    float: right;
+    position: fixed;
+    right: 15px;
+    background: $background-menu;
+    color: $text-color-white;
+    padding: 10px 20px;
+    border-radius: 50%;
+    bottom: 15px;
 }

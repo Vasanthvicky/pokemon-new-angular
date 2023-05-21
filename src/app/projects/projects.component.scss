@@ -1,0 +1,12 @@
+@import '../../../src/variables.scss';
+
+.title {
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: underline;
+}
+.container-block {
+    p {
+        padding: 15px 0;
+    }
+}

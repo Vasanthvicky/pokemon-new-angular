@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { ImgDirectoryService } from "../service/img-directory.service";
 
 @Component({
@@ -11,7 +11,7 @@ import { ImgDirectoryService } from "../service/img-directory.service";
 export class AboutMeComponent implements OnInit {
   myLinkedInIcon = faLinkedin;
   myGithubIcon = faGithub;
-  faDownload = faDownload;
+  faDownArrow = faArrowDown;
 
   profilePic: any;
 
@@ -26,6 +26,11 @@ export class AboutMeComponent implements OnInit {
     this.skillPic = this.imgService.skillImg;
     setTimeout(() => {
       this.pageLoading = false;
-    }, 5000);
+    }, 3000);
+  }
+
+  scrollToElement($element) {
+    console.log($element);
+    $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
 }
