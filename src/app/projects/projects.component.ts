@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ImgDirectoryService } from "../service/img-directory.service";
+import { projectData } from './project-data';
 
 @Component({
   selector: 'app-projects',
@@ -11,6 +12,10 @@ export class ProjectsComponent implements OnInit {
 
   projectDetails: any;
 
+  projectDataInfo = projectData;
+
+  projectList: any;
+
   constructor(private imgService: ImgDirectoryService){};
 
   ngOnInit(): void {
@@ -18,6 +23,8 @@ export class ProjectsComponent implements OnInit {
     setTimeout(() => {
       this.pageLoading = false;
     }, 3000);
+
+    console.log(this.projectDataInfo)
   }
 
 

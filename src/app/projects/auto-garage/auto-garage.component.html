@@ -1,0 +1,16 @@
+<p>auto-garage works!</p>
+
+
+<div class="project-details">
+    <ul class="project-block">
+        <li *ngFor="let project of projectDetails">
+            <h2 class="title">{{project.title}}</h2>
+            <div class="project-img">
+                <img [src]="project.src" alt="">
+            </div>
+            <div class="project-description">
+                <p>{{project.description}}</p>
+            </div>
+        </li>
+    </ul>
+</div>
