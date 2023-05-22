@@ -10,3 +10,12 @@
         padding: 15px 0;
     }
 }
+.project-block {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    li {
+        display: block;
+        padding: 20px;
+    }
+}
