@@ -46,7 +46,7 @@ export class SideNavComponent implements OnInit {
   }
 
   printIcon(daa){
-    console.log(fabIcons[daa]);
+    // console.log(fabIcons[daa]);
     return fabIcons[daa]
     
   }

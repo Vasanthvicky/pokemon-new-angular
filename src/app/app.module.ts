@@ -19,6 +19,13 @@ import { RouterComponent } from './router/router.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { TopNavigationComponent } from './top-navigation/top-navigation.component';
 import { FullPageLoaderModule } from './full-page-loader/full-page-loader.module';
+import { AutoGarageComponent } from './projects/auto-garage/auto-garage.component';
+import { VehicleBookingManagementSystemComponent } from './projects/vehicle-booking-management-system/vehicle-booking-management-system.component';
+import { RoadsideAssistanceComponent } from './projects/roadside-assistance/roadside-assistance.component';
+import { PmsComponent } from './projects/pms/pms.component';
+import { FinanceManagementSystemComponent } from './projects/finance-management-system/finance-management-system.component';
+import { EasyPayComponent } from './projects/easy-pay/easy-pay.component';
+import { DemsComponent } from './projects/dems/dems.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +39,14 @@ import { FullPageLoaderModule } from './full-page-loader/full-page-loader.module
     RouterComponent,
     ProjectsComponent,
     AboutMeComponent,
-    ContactComponent
+    ContactComponent,
+    AutoGarageComponent,
+    VehicleBookingManagementSystemComponent,
+    RoadsideAssistanceComponent,
+    PmsComponent,
+    FinanceManagementSystemComponent,
+    EasyPayComponent,
+    DemsComponent
   ],
   imports: [
     BrowserModule,
