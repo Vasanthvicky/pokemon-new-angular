@@ -73,7 +73,7 @@ export class ImgDirectoryService {
     },
   ];
 
-  projectInfo = [
+  autoGarageInfo = [
     {
       title: 'AUTO Garage',
       src: "https://firebasestorage.googleapis.com/v0/b/vigneshvasanthportfolio.appspot.com/o/project-img%2Fauto-garage%2FAUTO-Garage-1.png?alt=media&token=0519b2e2-345b-4658-b35c-7fa6e9e70cce",
@@ -83,7 +83,10 @@ export class ImgDirectoryService {
       title:'',
       src: "https://firebasestorage.googleapis.com/v0/b/vigneshvasanthportfolio.appspot.com/o/project-img%2Fauto-garage%2FAUTO-Garage-2.png?alt=media&token=f11508b2-6e73-4b52-a40c-1c7d8e725a73",
       description: '',
-    },
+    }
+  ];
+
+  vbmsInfo = [
     {
       title:'Vehicle Booking Management System',
       src: "https://firebasestorage.googleapis.com/v0/b/vigneshvasanthportfolio.appspot.com/o/project-img%2FVehicle-Booking-Management-System%2FVIMS-1.png?alt=media&token=59d77832-0f87-47ce-af5b-1fa8df7c0a53",
@@ -104,6 +107,9 @@ export class ImgDirectoryService {
       src: "https://firebasestorage.googleapis.com/v0/b/vigneshvasanthportfolio.appspot.com/o/project-img%2FVehicle-Booking-Management-System%2FVIMS-4.png?alt=media&token=d07837a2-3f97-4820-a677-ea0a3b8467a8",
       description: '',
     },
+  ];
+
+  roadAssistanceInfo = [
     {
       title:'Roadside Assistance',
       src: "https://firebasestorage.googleapis.com/v0/b/vigneshvasanthportfolio.appspot.com/o/project-img%2FRoadside-Assistance%2FRSA-1.png?alt=media&token=cc926179-8eb3-43fe-878a-df9b3ab447ed",
@@ -124,6 +130,9 @@ export class ImgDirectoryService {
       src: "https://firebasestorage.googleapis.com/v0/b/vigneshvasanthportfolio.appspot.com/o/project-img%2FRoadside-Assistance%2FRSA-4.png?alt=media&token=8bde94a4-7fb6-481f-8518-3efa0c260f01",
       description: '',
     },
+  ];
+
+  pmsInfo = [
     {
       title:'PMS',
       src: "https://firebasestorage.googleapis.com/v0/b/vigneshvasanthportfolio.appspot.com/o/project-img%2FPMS%2FPMS-1.png?alt=media&token=9379f79f-d680-4309-b555-a8b3be5f7703",
@@ -135,7 +144,7 @@ export class ImgDirectoryService {
       description: '',
     },
     {
-      title:'PMS',
+      title:'',
       src: "https://firebasestorage.googleapis.com/v0/b/vigneshvasanthportfolio.appspot.com/o/project-img%2FPMS%2FPMS-3.png?alt=media&token=c2c5c91f-26ba-4832-8bb2-b3bf7de330f5",
       description: '',
     },
@@ -149,6 +158,8 @@ export class ImgDirectoryService {
       src: "https://firebasestorage.googleapis.com/v0/b/vigneshvasanthportfolio.appspot.com/o/project-img%2FPMS%2FPMS-5.png?alt=media&token=dc9090d8-2938-4c31-ae71-cee09313b926",
       description: '',
     },
+  ];
+  fmsInfo = [
     {
       title:'Finance Management System',
       src: "https://firebasestorage.googleapis.com/v0/b/vigneshvasanthportfolio.appspot.com/o/project-img%2FFinance-Management-System%2FFMS-1.png?alt=media&token=d74e5290-cc81-40e2-9545-25b3b458b6cb",
@@ -168,7 +179,10 @@ export class ImgDirectoryService {
       title:'',
       src: "https://firebasestorage.googleapis.com/v0/b/vigneshvasanthportfolio.appspot.com/o/project-img%2FFinance-Management-System%2FFMS-4.png?alt=media&token=8abefe23-4111-456b-a405-d048c9b2cd59",
       description: '',
-    },
+    },    
+  ];
+
+  easyPayInfo = [
     {
       title:'Easy Pay',
       src: "https://firebasestorage.googleapis.com/v0/b/vigneshvasanthportfolio.appspot.com/o/project-img%2FEasy-Pay%2FEasyPay-1.png?alt=media&token=dd4edf06-3f1c-40c2-9e1e-d0220ef82dac",
@@ -199,6 +213,8 @@ export class ImgDirectoryService {
       src: "https://firebasestorage.googleapis.com/v0/b/vigneshvasanthportfolio.appspot.com/o/project-img%2FEasy-Pay%2FEasyPay-6.png?alt=media&token=dada2e70-44d6-4c5c-8d3e-f63741fd5e3d",
       description: '',
     },
+  ];
+  demsInfo =[
     {
       title:'Digital Expenses Management System',
       src: "https://firebasestorage.googleapis.com/v0/b/vigneshvasanthportfolio.appspot.com/o/project-img%2FDigital-Expenses-Management-System%2FDEMS-1.png?alt=media&token=73b93ba8-7ecc-4dc5-88cc-a443829de975",
@@ -218,6 +234,6 @@ export class ImgDirectoryService {
       title:'',
       src: "https://firebasestorage.googleapis.com/v0/b/vigneshvasanthportfolio.appspot.com/o/project-img%2FDigital-Expenses-Management-System%2FDEMS-4.png?alt=media&token=7168c728-137d-4bb9-b2a2-93b76d201616",
       description: '',
-    },
-  ]
+    }
+  ];
 }

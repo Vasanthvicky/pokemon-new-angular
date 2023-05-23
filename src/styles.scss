@@ -65,3 +65,16 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background-color: $text-color-white;
 }
+
+.project-block {
+    display: block;
+    grid-template-columns: auto auto;
+    align-items: center;
+    li {
+        display: block;
+        padding: 20px;
+        width: 80%;
+        height: 80%;
+        margin: 0 auto;
+    }
+}
