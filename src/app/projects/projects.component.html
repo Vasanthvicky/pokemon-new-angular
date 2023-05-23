@@ -56,28 +56,18 @@
     project.
   </p>
   <div class="project-details">
-      <ul class="project-block">
-          <!-- <li *ngFor="let project of projectDetails">
-              <h2 class="title">{{project.title}}</h2>
-              <div class="project-img">
-                  <img [src]="project.src" alt="">
-              </div>
-              <div class="project-description">
-                  <p>{{project.description}}</p>
-              </div>
-          </li> -->
+    <h2 class="title">Project List :</h2>
+      <ul class="project-list-section">
           <li *ngFor="let projectData of projectDataInfo">
               <div class="router-card-view">
-                  <a href="" class="" [routerLink]="[projectData.routerLink]" routerLinkActive="active"
+                  <a href="" class="project-card-view-details" [routerLink]="[projectData.routerLink]" routerLinkActive="active"
                   >
-                  <h2 class="title">{{projectData.title}}</h2>
+                  <h2 class="project-title">{{projectData.title}}</h2>
               </a>
               </div>
           </li>
-          <!-- <a routerLink="./auto-garage">auto garage</a> -->
-          <router-outlet></router-outlet>
-          
       </ul>
+      <router-outlet></router-outlet>
   </div>
 </div>
 

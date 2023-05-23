@@ -10,3 +10,28 @@
         padding: 15px 0;
     }
 }
+.project-list-section {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 80%;
+    margin: 0 auto;
+    li {
+        display: inline-block;
+       
+        .project-card-view-details {
+            display: grid;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            height: 200px;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            .project-title {
+                font-weight: bold;
+                font-size: 24px;
+            }
+        }
+    }
+}
