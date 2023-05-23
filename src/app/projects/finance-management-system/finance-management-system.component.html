@@ -1,1 +1,17 @@
-<p>finance-management-system works!</p>
+<app-full-page-loader *ngIf="pageLoading"></app-full-page-loader>
+
+<div class="container-block" *ngIf="!pageLoading">
+    <div class="project-details">
+      <ul class="project-block">
+        <li *ngFor="let fmsData of fmsDetails">
+          <h2 class="title">{{ fmsData.title }}</h2>
+          <div class="project-img">
+            <img [src]="fmsData.src" alt="" />
+          </div>
+          <div class="project-description">
+            <p>{{ fmsData.description }}</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>

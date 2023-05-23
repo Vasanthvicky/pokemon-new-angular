@@ -2,7 +2,8 @@ export const projectData = [
     {
         routerLink: 'auto-garage',
         icon: '',
-        title: 'Auto Garage'
+        title: 'Auto Garage',
+        id: 1
     },
     {
         routerLink: 'dems',

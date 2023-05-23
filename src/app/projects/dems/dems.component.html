@@ -1,1 +1,17 @@
-<p>dems works!</p>
+<app-full-page-loader *ngIf="pageLoading"></app-full-page-loader>
+
+<div class="container-block" *ngIf="!pageLoading">
+    <div class="project-details">
+      <ul class="project-block">
+        <li *ngFor="let demsData of demsDetails">
+          <h2 class="title">{{ demsData.title }}</h2>
+          <div class="project-img">
+            <img [src]="demsData.src" alt="" />
+          </div>
+          <div class="project-description">
+            <p>{{ demsData.description }}</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>

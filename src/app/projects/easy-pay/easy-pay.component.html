@@ -1,1 +1,17 @@
-<p>easy-pay works!</p>
+<app-full-page-loader *ngIf="pageLoading"></app-full-page-loader>
+
+<div class="container-block" *ngIf="!pageLoading">
+    <div class="project-details">
+      <ul class="project-block">
+        <li *ngFor="let easyPayData of easyPayDetails">
+          <h2 class="title">{{ easyPayData.title }}</h2>
+          <div class="project-img">
+            <img [src]="easyPayData.src" alt="" />
+          </div>
+          <div class="project-description">
+            <p>{{ easyPayData.description }}</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ImgDirectoryService } from "../service/img-directory.service";
 import { projectData } from './project-data';
+import { navbarData } from '../side-nav/nav-data';
 
 @Component({
   selector: 'app-projects',
@@ -19,7 +20,7 @@ export class ProjectsComponent implements OnInit {
   constructor(private imgService: ImgDirectoryService){};
 
   ngOnInit(): void {
-    this.projectDetails = this.imgService.projectInfo;
+    this.projectDetails = this.imgService.autoGarageInfo;
     setTimeout(() => {
       this.pageLoading = false;
     }, 3000);

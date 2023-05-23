@@ -1,1 +1,17 @@
-<p>roadside-assistance works!</p>
+<app-full-page-loader *ngIf="pageLoading"></app-full-page-loader>
+
+<div class="container-block" *ngIf="!pageLoading">
+  <div class="project-details">
+    <ul class="project-block">
+      <li *ngFor="let roadAssistanceData of roadAssistanceDetails">
+        <h2 class="title">{{ roadAssistanceData.title }}</h2>
+        <div class="project-img">
+          <img [src]="roadAssistanceData.src" alt="" />
+        </div>
+        <div class="project-description">
+          <p>{{ roadAssistanceData.description }}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

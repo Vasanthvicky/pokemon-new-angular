@@ -8,8 +8,13 @@ import { ImgDirectoryService } from 'src/app/service/img-directory.service';
 })
 export class AutoGarageComponent implements OnInit{
 projectDetails: any;
+pageLoading = true;
 constructor(private imgService: ImgDirectoryService){}
 ngOnInit(): void {
-  this.projectDetails = this.imgService.projectInfo;
+  this.projectDetails = this.imgService.autoGarageInfo;
+
+  setTimeout(() => {
+    this.pageLoading = false;
+  }, 3000)
 }
 }

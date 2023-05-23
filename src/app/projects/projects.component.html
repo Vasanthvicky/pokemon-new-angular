@@ -69,11 +69,14 @@
           <li *ngFor="let projectData of projectDataInfo">
               <div class="router-card-view">
                   <a href="" class="" [routerLink]="[projectData.routerLink]" routerLinkActive="active"
-                  routerLinkActiveOptions="{exact: true}">
+                  >
                   <h2 class="title">{{projectData.title}}</h2>
               </a>
               </div>
           </li>
+          <!-- <a routerLink="./auto-garage">auto garage</a> -->
+          <router-outlet></router-outlet>
+          
       </ul>
   </div>
 </div>
