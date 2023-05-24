@@ -60,10 +60,11 @@
       <ul class="project-list-section">
           <li *ngFor="let projectData of projectDataInfo">
               <div class="router-card-view">
-                  <a href="" class="project-card-view-details" [routerLink]="[projectData.routerLink]" routerLinkActive="active"
+                  <div class="project-card-view-details" 
                   >
                   <h2 class="project-title">{{projectData.title}}</h2>
-              </a>
+                  <a class="learn-hover-only" [routerLink]="[projectData.routerLink]" routerLinkActive="active">Learn More</a>
+              </div>
               </div>
           </li>
       </ul>
