@@ -5,7 +5,7 @@ export const navbarData = [
         label: 'About'
     },
     {
-        routeLink: 'projects',
+        routeLink: 'project-list',
         icon: 'faDiagramProject',
         label: 'Projects'
     },

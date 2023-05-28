@@ -26,6 +26,8 @@ import { PmsComponent } from './projects/pms/pms.component';
 import { FinanceManagementSystemComponent } from './projects/finance-management-system/finance-management-system.component';
 import { EasyPayComponent } from './projects/easy-pay/easy-pay.component';
 import { DemsComponent } from './projects/dems/dems.component';
+import { ProjectsRoutingModule } from './projects/projects-routing.module';
+import { ProjectListViewComponent } from './projects/project-list-view/project-list-view.component';
 
 @NgModule({
   declarations: [
@@ -56,9 +58,10 @@ import { DemsComponent } from './projects/dems/dems.component';
     MyLibModule,
     DataListComponent,
     FontAwesomeModule,
-    FullPageLoaderModule
+    FullPageLoaderModule,
+    ProjectsRoutingModule
   ],
-  providers: [],
+  providers: [ProjectListViewComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
