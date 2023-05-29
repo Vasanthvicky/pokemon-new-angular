@@ -48,7 +48,8 @@ import { ProjectListViewComponent } from './projects/project-list-view/project-l
     PmsComponent,
     FinanceManagementSystemComponent,
     EasyPayComponent,
-    DemsComponent
+    DemsComponent,
+    ProjectListViewComponent
   ],
   imports: [
     BrowserModule,

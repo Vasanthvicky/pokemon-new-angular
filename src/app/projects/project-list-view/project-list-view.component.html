@@ -1,6 +1,6 @@
-<!-- <app-full-page-loader *ngIf="pageLoading"></app-full-page-loader> -->
+<app-full-page-loader *ngIf="pageLoading"></app-full-page-loader>
 
-<div class="container-block">
+<div class="container-block" *ngIf="!pageLoading">
   <h3 class="title pt-3">My Projects</h3>
 
   <p>
@@ -58,81 +58,15 @@
   <div class="project-details">
     <h2 class="title">Project List :</h2>
     <ul class="project-list-section">
-      <p>{{projectList }}</p>
-      <li *ngFor="let Data of projectList">
+      <li *ngFor="let data of projectData">
         <div class="router-card-view">
           <div class="project-card-view-details">
-            <h2 class="project-title">{{ Data.title }}</h2>
-            <a href="">sdfsdf</a>
-            <!-- <a
+            <h2 class="project-title">{{ data.title }}</h2>
+            <a
               class="learn-hover-only"
-              [routerLink]="[Data.routerLink]"
-              routerLinkActive="router-link-active"
+              (click)="navigateTo(data.routerLink)"
               >Learn More</a
-            > -->
-          </div>
-        </div>
-      </li>
-      <li>
-        <!-- <a class="learn-hover-only" routerLink="{{psListView.routerLink}}" >Learn More</a> -->
-      </li>
-    </ul>
-    <!-- <button (click)="navigateTo()">Click</button> -->
-
-    <ul class="project-list-section">
-      <li>
-        <div class="router-card-view">
-          <div class="project-card-view-details">
-            <h2 class="project-title">Auto Garage</h2>
-            <a class="learn-hover-only" (click)="navigateToAg()">Learn More</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="router-card-view">
-          <div class="project-card-view-details">
-            <h2 class="project-title">DEMS</h2>
-            <a class="learn-hover-only" (click)="navigateToDems()">Learn More</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="router-card-view">
-          <div class="project-card-view-details">
-            <h2 class="project-title">Easy Pay</h2>
-            <a class="learn-hover-only" (click)="navigateToEp()">Learn More</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="router-card-view">
-          <div class="project-card-view-details">
-            <h2 class="project-title">Finance Management System</h2>
-            <a class="learn-hover-only" (click)="navigateToFms()">Learn More</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="router-card-view">
-          <div class="project-card-view-details">
-            <h2 class="project-title">PMS</h2>
-            <a class="learn-hover-only" (click)="navigateToPms()">Learn More</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="router-card-view">
-          <div class="project-card-view-details">
-            <h2 class="project-title">Roadside Assistance</h2>
-            <a class="learn-hover-only" (click)="navigateToRa()">Learn More</a>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="router-card-view">
-          <div class="project-card-view-details">
-            <h2 class="project-title">Vehicle Booking Management System</h2>
-            <a class="learn-hover-only" (click)="navigateToVbms()">Learn More</a>
+            >
           </div>
         </div>
       </li>
