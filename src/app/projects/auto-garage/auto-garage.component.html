@@ -7,11 +7,28 @@
         <h2 class="title">{{ autoGarageData.title }}</h2>
         <div class="project-img">
           <img [src]="autoGarageData.src" alt="" />
-        </div>
-        <div class="project-description">
-          <p>{{ autoGarageData.description }}</p>
-        </div>
+        </div>        
       </li>
+      <div class="project-description" *ngFor="let autoGarageData of projectDetails">
+        <p>{{ autoGarageData.description }}</p>
+        <p>{{autoGarageData.challengesFaced }}</p>
+        <p>
+          AUTO Garage is a feature-rich and customized software that digitizes the entire process of servicing heavy vehicles at the client's service center.
+          It involves 6 major stages, from vehicle entry to exit, and is accessible through both web and mobile applications.
+          The application improves business operations and customer retention for the client's service center.
+          It eliminates manual processes and replaces them with a digital management system.
+          The client is an original equipment supplier with 62+ service outlets across India.
+          The application simplifies the end-to-end vehicle service procedure and includes a tracking system for sales and services.
+          Manual material gate pass and tedious paperwork are replaced with automated processes.
+          Approval workflows are streamlined, reducing delays and improving efficiency.
+          The tracking of labor working hours is automated, saving time and effort.
+          The application helps manage material requests and stock availability, improving communication and reducing revenue leakage.
+          Customer retention is improved through better communication and streamlined processes.
+          The application was designed to introduce automated standard operating procedures without disrupting the existing working environment.
+          The aim was to simplify and enhance operations through an intelligent application.
+          By implementing the AUTO Garage application, the client's service center was able to streamline their processes, improve efficiency, reduce paperwork, and enhance customer satisfaction.
+        </p>
+      </div>
     </ul>
   </div>
 </div>
