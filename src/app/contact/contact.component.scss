@@ -32,10 +32,11 @@
     .title {
         font-size: 22px;
         font-weight: 600;
-        padding: 10px 0;
+        padding: 10px 0 5px;
     }
     .list-block {        
         display: inline-block;
+        line-height: 1.2;
         li {
             display: flex;
             flex-wrap: wrap;
@@ -58,10 +59,10 @@
     .title {
         font-size: 22px;
         font-weight: 600;
-        padding: 10px 0;
+        padding: 20px 0 5px;
     }
     li {
-        list-style-type: circle;
+        list-style-type: initial;
         padding: 5px 0; 
         margin-left: 20px;
         position: relative;
@@ -89,14 +90,31 @@
     .title {
         font-size: 22px;
         font-weight: 600;
-        padding: 10px 0;
+        padding: 20px 0 5px;
     }
+}
+p {
+    margin-bottom: 0;
+}
+
+.list-skills {
+    .progress-bar {
+        margin: 10px 0;
+    }
+    li {
+        list-style-type: initial;
+        padding: 5px 0;
+        margin-left: 20px;
+    }
+}
+.bg-blue-600 {
+    background-color: #272727;
 }
 
 .name-block {
     display: inline-block;
     background: orange;
-    padding: 10px 50px 10px 20px;
+    padding: 10px 60px 10px 30px;
     margin-bottom: 15px;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
@@ -111,7 +129,7 @@
     }
 }
 .summary-block {
-    padding: 0 20px 0 20px;
+    padding: 0 20px 0 30px;
     .title {
         font-size: 22px;
         font-weight: 600;
@@ -124,19 +142,22 @@
     }
 }
 .experience-block {
-    padding: 0 20px 0 20px;
+    padding: 0 20px 0 30px;
     .title {
         font-size: 22px;
         font-weight: 600;
         padding: 10px 0 0;
         border-bottom: 1px solid #000;
+        small {
+            display: block;
+        }
     }
     .experience-list {
         padding: 15px 0;
         color: darkslategray;
         padding-left: 20px;
         li {
-            list-style-type: circle;
+            list-style-type: initial;
             padding: 5px 0; 
         }
     }

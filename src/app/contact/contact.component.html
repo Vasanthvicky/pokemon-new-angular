@@ -1,4 +1,6 @@
-<div class="container-block">
+<app-full-page-loader *ngIf="pageLoading"></app-full-page-loader>
+
+<div class="container-block" *ngIf="!pageLoading">
   <div class="my-resume">
     <div class="row my-profile-section">
       <div class="left-details-info">
@@ -9,7 +11,6 @@
           />
         </div>
         <div class="profile-details">
-          <h3 class="title">Personal Info</h3>
           <ul class="list-block">
             <li>
               <fa-icon class="side-nav-link-icon" [icon]="myMailIcon"></fa-icon>
@@ -27,18 +28,22 @@
                 class="side-nav-link-icon"
                 [icon]="myLinkedInIcon"
               ></fa-icon>
-              <p>Vigneshvasanth C</p>
+              <a
+                href="https://www.linkedin.com/in/vigneshvasanth-c/"
+                target="”_blank”"
+                >Vigneshvasanth C</a
+              >
             </li>
             <li>
               <fa-icon class="side-nav-link-icon" [icon]="myFlag"></fa-icon>
-              <p>Indian</p>
+              <p>Coimbatore, Indian</p>
             </li>
             <li>
               <fa-icon
                 class="side-nav-link-icon"
-                [icon]="myDateOfBirth"
+                [icon]="myPortfolio"
               ></fa-icon>
-              <p>10-05-1995</p>
+              <a>c.vigneshvasanth.com</a>
             </li>
           </ul>
 
@@ -61,23 +66,81 @@
             </li>
           </ul>
 
-          <ul class="list-skills">
+          <!-- <ul class="list-skills">
             <h3 class="title">Skills</h3>
             <li>
               <p>Teamwork</p>
+              <div
+                class="progress-bar w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+              >
+                <div
+                  class="bg-blue-600 h-2.5 rounded-full"
+                  style="width: 90%"
+                ></div>
+              </div>
             </li>
             <li>
               <p>Creativity</p>
+              <div
+                class="progress-bar w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+              >
+                <div
+                  class="bg-blue-600 h-2.5 rounded-full"
+                  style="width: 80%"
+                ></div>
+              </div>
             </li>
             <li>
               <p>Time Management</p>
+              <div
+                class="progress-bar w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+              >
+                <div
+                  class="bg-blue-600 h-2.5 rounded-full"
+                  style="width: 90%"
+                ></div>
+              </div>
             </li>
             <li>
               <p>Communication</p>
+              <div
+                class="progress-bar w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+              >
+                <div
+                  class="bg-blue-600 h-2.5 rounded-full"
+                  style="width: 80%"
+                ></div>
+              </div>
             </li>
             <li>
               <p>Problem Solving</p>
+              <div
+                class="progress-bar w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700"
+              >
+                <div
+                  class="bg-blue-600 h-2.5 rounded-full"
+                  style="width: 90%"
+                ></div>
+              </div>
             </li>
+          </ul> -->
+
+          <ul class="list-skills">
+            <h3 class="title">Technical Skills</h3>
+            <li>HTML/CSS</li>
+            <li>Tailwind CSS, SCSS, Less, Sass</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>Bootstrap</li>
+            <li>Angular 12 +</li>
+            <li>Responsive Web Design: Advanced</li>
+            <li>User Experience (UX) Design: Proficient</li>
+            <li>Version Control (Git): Proficient</li>
+            <li>Bitbucket</li>
+            <li>Visual Studio Code</li>
+            <li>Atlasain</li>
+            <li>Jira Service Desk</li>
+            <li>Figma</li>
           </ul>
 
           <ul class="list-links">
@@ -99,7 +162,7 @@
           </ul>
 
           <ul class="list-hobbies">
-            <h3 class="title">Hobbies</h3>
+            <h3 class="title">Interests</h3>
             <li>
               <p>Playing Cricket</p>
             </li>
@@ -117,58 +180,24 @@
       </div>
       <div class="right-details-info">
         <div class="name-block">
-          <h2 class="title name">
-            Vignesh Vasanth C
-          </h2>
+          <h2 class="title name">Vignesh Vasanth C</h2>
           <h5 class="sub-title">UI Engineer</h5>
-        </div><!-- Name Block -->
+        </div>
+        <!-- Name Block -->
         <div class="summary-block">
           <h3 class="title">Summary</h3>
           <p class="summary">
-            Proficient Front End Web Developer with a passion for creating
-            interactive, engaging websites and applications. Expert in HTML/CSS,
-            JavaScript, and Angular.
+            Highly proficient Front End Web Developer with 5+ years of
+            experience in HTML/CSS, JavaScript, and Angular. Skilled in
+            translating designs into functional interfaces. Detail-oriented and
+            collaborative, dedicated to delivering exceptional user experiences.
           </p>
-        </div><!-- Summary Block -->
-
-        <div class="experience-block">
-          <h3 class="title">UI Developer UITOUX Solution Private Limited</h3>
-          <ul class="experience-list">
-            <li>
-              Collaborated with a multidisciplinary team to design and implement
-              an interactive web application using HTML, CSS, JavaScript, and
-              JavaScript.
-            </li>
-            <li>
-              Successfully created a user-friendly interface for a SaaS
-              application, which increased customer satisfaction by 25%.
-            </li>
-            <li>
-              Developed mobile-responsive UI using Bootstrap and Angular JS.
-            </li>
-            <li>
-              Utilized Angular JS to develop custom web applications with
-              dynamic user interface components.
-            </li>
-            <li>
-              Implemented a user-friendly interface for a web-based application
-              using HTML5, CSS3, and JavaScript.
-            </li>
-            <li>
-              Developed a design system for an enterprise application, which
-              resulted in a more efficient user experience.
-            </li>
-            <li>
-              HTML, CSS, Tailwind CSS, Sass, and Less, I have a powerful toolkit
-              for building beautiful, responsive, and efficient web designs.
-              These technologies can significantly my development process and
-              enhance my ability to create visually appealing websites.
-            </li>
-          </ul>
         </div>
+        <!-- Summary Block -->
 
         <div class="experience-block">
-          <h3 class="title">UI Engineer at TrusTrace</h3>
+          <h3 class="title">UI Engineer at TrusTrace <small>Sep 2019 - Present</small></h3>
+          
           <ul class="experience-list">
             <li>
               Developed front-end user interfaces for several complex web
@@ -242,7 +271,58 @@
             </li>
           </ul>
         </div>
+
+        <div class="experience-block">
+          <h3 class="title">UI Developer UITOUX Solution Private Limited <small>Sep 2017 - Sep 2019</small></h3>
+          
+          <ul class="experience-list">
+            <li>
+              Collaborated with a multidisciplinary team to design and implement
+              an interactive web application using HTML, CSS, JavaScript, and
+              JavaScript.
+            </li>
+            <li>
+              Successfully created a user-friendly interface for a SaaS
+              application, which increased customer satisfaction by 25%.
+            </li>
+            <li>
+              Developed mobile-responsive UI using Bootstrap and Angular JS.
+            </li>
+            <li>
+              Utilized Angular JS to develop custom web applications with
+              dynamic user interface components.
+            </li>
+            <li>
+              Implemented a user-friendly interface for a web-based application
+              using HTML5, CSS3, and JavaScript.
+            </li>
+            <li>
+              Developed a design system for an enterprise application, which
+              resulted in a more efficient user experience.
+            </li>
+            <li>
+              HTML, CSS, Tailwind CSS, Sass, and Less, I have a powerful toolkit
+              for building beautiful, responsive, and efficient web designs.
+              These technologies can significantly my development process and
+              enhance my ability to create visually appealing websites.
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
+<p>
+  Hello, I'm an experienced Angular Front End Developer with over 5 years of
+  professional experience. I have a strong background in developing robust and
+  scalable web applications using Angular frameworks. With my expertise in HTML,
+  CSS, and JavaScript, I specialize in creating interactive and user-friendly
+  interfaces. I am well-versed in Angular versions including AngularJS, Angular
+  2+, and Angular 12, and have a deep understanding of core Angular concepts
+  such as components, modules, services, and routing. Throughout my career, I
+  have successfully delivered projects that have met client requirements and
+  exceeded expectations. I am committed to continuously learning and staying
+  updated with the latest trends and best practices in front-end development to
+  ensure the delivery of cutting-edge solutions.
+</p>

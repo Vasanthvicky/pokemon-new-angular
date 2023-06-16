@@ -6,13 +6,13 @@ export const topNavData = [
         flag: 'brand'
     },
     {
-        routeLink : 'about-me',
+        routeLink : 'project-list',
         icon: 'faUser',
-        label: 'Skills',
+        label: 'Projects',
         flag: 'solid'
     },
     {
-        routeLink : 'about-me',
+        routeLink : 'contact',
         icon: 'faUser',
         label: 'Contact Us'
     },
