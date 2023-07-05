@@ -85,15 +85,16 @@ export class ImgDirectoryService {
     {
       title: "",
       src: "https://firebasestorage.googleapis.com/v0/b/vigneshvasanthportfolio.appspot.com/o/project-img%2Fauto-garage%2FAUTO-Garage-2.png?alt=media&token=f11508b2-6e73-4b52-a40c-1c7d8e725a73",
-      description: "",
+      description: "AUTO Garage is a feature-rich and customized software that digitizes the entire process of servicing heavy vehicles at the client's service center.          It involves 6 major stages, from vehicle entry to exit, and is accessible through both web and mobile applications.          The application improves business operations and customer retention for the client's service center.          It eliminates manual processes and replaces them with a digital management system.          The client is an original equipment supplier with 62+ service outlets across India.          The application simplifies the end-to-end vehicle service procedure and includes a tracking system for sales and services.          Manual material gate pass and tedious paperwork are replaced with automated processes.          Approval workflows are streamlined, reducing delays and improving efficiency.          The tracking of labor working hours is automated, saving time and effort.          The application helps manage material requests and stock availability, improving communication and reducing revenue leakage.          Customer retention is improved through better communication and streamlined processes.          The application was designed to introduce automated standard operating procedures without disrupting the existing working environment.          The aim was to simplify and enhance operations through an intelligent application.          By implementing the AUTO Garage application, the client's service center was able to streamline their processes, improve efficiency, reduce paperwork, and enhance customer satisfaction.",
     },
   ];
 
   vbmsInfo = [
     {
       title: "Vehicle Booking Management System",
+      overview: "Overview",
       src: "https://firebasestorage.googleapis.com/v0/b/vigneshvasanthportfolio.appspot.com/o/project-img%2FVehicle-Booking-Management-System%2FVIMS-1.png?alt=media&token=59d77832-0f87-47ce-af5b-1fa8df7c0a53",
-      description: "",
+      description: "Vehicle Booking Management System (VBMS) is designed to make the whole automobile buying process smooth. The full management of quotation, sales invoice, and refund takes place in an organized manner as the client is dealing with high volumes and huge transactions. This also helps to keep track of all vehicles on the showroom premises and will helps us to maintain the data of all customers who have made transactions with us. Also helps us keeping our records, serving our customers better by helping them in all their automotive needs.",
     },
     {
       title: "",
@@ -115,8 +116,9 @@ export class ImgDirectoryService {
   roadAssistanceInfo = [
     {
       title: "Roadside Assistance",
+      overview: "Overview",
       src: "https://firebasestorage.googleapis.com/v0/b/vigneshvasanthportfolio.appspot.com/o/project-img%2FRoadside-Assistance%2FRSA-1.png?alt=media&token=cc926179-8eb3-43fe-878a-df9b3ab447ed",
-      description: "",
+      description: "An achievement of 100+ crore invoice values, 61,700+ Road Side Assistance members with expertise in multiple vehicle services. UITOUX turned their dream into reality with fineness through the portal designed to supervise invoices, subscribers & sales proceeds. With an intent to outstand and to integrate the leading automobile players such as Honda, Renault, Ashok Leyland, Nissan, Bajaj Finance, etc., with their portal to provide RSA; we made it possible for our most valued clientele to take a huge leap on Road Side Assistance.",
     },
     {
       title: "",
@@ -137,9 +139,10 @@ export class ImgDirectoryService {
 
   pmsInfo = [
     {
-      title: "PMS",
+      title: "Help Desk",
+      overview: "Overview",
       src: "https://firebasestorage.googleapis.com/v0/b/vigneshvasanthportfolio.appspot.com/o/project-img%2FPMS%2FPMS-1.png?alt=media&token=9379f79f-d680-4309-b555-a8b3be5f7703",
-      description: "",
+      description: "Help Desk is a web-based customer service tool that allows you to organize, automate, and deliver all of your support & customer queries in a more efficient and scalable way. With our Help Desk Management software you can turn your customers' issues into business value. Our Help Desk can be used to solve the problems in the application. It will display all the modules in one click. Use the Ticket Tool and Raise Ticket to resolve the problem in the application. A simple and efficient ticket tool can mean the difference for your business. The Help Desk module will enable you to better manage your assets, incidents, services and problems, track performance and help improve the overall efficiency of your projects.",
     },
     {
       title: "",
@@ -165,8 +168,9 @@ export class ImgDirectoryService {
   fmsInfo = [
     {
       title: "Finance Management System",
+      overview: "Overview",
       src: "https://firebasestorage.googleapis.com/v0/b/vigneshvasanthportfolio.appspot.com/o/project-img%2FFinance-Management-System%2FFMS-1.png?alt=media&token=d74e5290-cc81-40e2-9545-25b3b458b6cb",
-      description: "",
+      description: "Finance Management System is used by the financial institutions to consolidate the financial data of an organization. Exclusively designed for creating, connecting, storing and reporting different types of finance transactions. This is a web application where a group of investors invest in the company who provides loans to the customers. The portal tracks down the loan payment, loan repayment, loan schedule, investor credit, investor debit, broker accounts, due follow ups and payment modes. This system can rapidly scale up the growth and provide functionalities for different geographical locations.",
     },
     {
       title: "",
@@ -188,8 +192,9 @@ export class ImgDirectoryService {
   easyPayInfo = [
     {
       title: "Easy Pay",
+      overview: "Overview",
       src: "https://firebasestorage.googleapis.com/v0/b/vigneshvasanthportfolio.appspot.com/o/project-img%2FEasy-Pay%2FEasyPay-1.png?alt=media&token=dd4edf06-3f1c-40c2-9e1e-d0220ef82dac",
-      description: "",
+      description: "Easy Pay admin allows Pan India Outlets of our client to pay their monthly expenses and keep track of them with ease. Pan India outlets include service, sales, warehouse, administrative access, etc. The application has been designed to automate the tedious and excruciating process of tracking the expenses for Annual Maintenance Cost. The main advantage of this system is that it is cloud based and completely secure. It enables a systematic approach to budgeting and tracking monthly expenses across India. The main users will be finance head, person managing the outlet and administrator. They will have access to management reports and upgrades provided by the owner of the software. This software is easy to use with simple procedures that solve a huge problem for our customers across India.",
     },
     {
       title: "",
@@ -220,8 +225,9 @@ export class ImgDirectoryService {
   demsInfo = [
     {
       title: "Digital Expenses Management System",
+      overview: "overview",
       src: "https://firebasestorage.googleapis.com/v0/b/vigneshvasanthportfolio.appspot.com/o/project-img%2FDigital-Expenses-Management-System%2FDEMS-1.png?alt=media&token=73b93ba8-7ecc-4dc5-88cc-a443829de975",
-      description: "",
+      description: "Digital Expenses Management System is a complete solution to manage expenses and claims of a business trip. The platform provides features like booking travel using any smart devices, travel approval, reduces the payment cycle time, track expenses, cash advances, instant reimbursement and direct banking integration. DEMS was developed to optimise the performance of the operations team with minimum involvement of manual touch. The objective is to deliver seamless experience for agents and employees with their effortless services.",
     },
     {
       title: "",

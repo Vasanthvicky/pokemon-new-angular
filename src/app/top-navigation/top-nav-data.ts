@@ -14,6 +14,6 @@ export const topNavData = [
     {
         routeLink : 'contact',
         icon: 'faUser',
-        label: 'Contact Us'
+        label: 'Resume'
     },
 ]

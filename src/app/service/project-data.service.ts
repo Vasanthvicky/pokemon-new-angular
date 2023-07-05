@@ -32,7 +32,7 @@ export class ProjectDataService {
     {
         routerLink: 'pms',
         icon: '',
-        title: 'PMS'
+        title: 'Help Desk'
     },
     {
         routerLink: 'roadside-assistance',

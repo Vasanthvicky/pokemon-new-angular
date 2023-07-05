@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Router } from "@angular/router";
 import { ImgDirectoryService } from "src/app/service/img-directory.service";
 
 @Component({
@@ -9,7 +10,7 @@ import { ImgDirectoryService } from "src/app/service/img-directory.service";
 export class PmsComponent implements OnInit {
   pageLoading = true;
   pmsDetails: any;
-  constructor(private imgService: ImgDirectoryService) {}
+  constructor(private imgService: ImgDirectoryService, private routeUrl: Router) {}
 
   ngOnInit(): void {
     this.pmsDetails = this.imgService.pmsInfo;
@@ -17,5 +18,8 @@ export class PmsComponent implements OnInit {
     setTimeout(() => {
       this.pageLoading = false;
     }, 3000);
+  }
+  backUrl() {
+    this.routeUrl.navigateByUrl('/project-list');
   }
 }

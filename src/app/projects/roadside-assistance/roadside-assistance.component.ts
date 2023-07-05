@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ImgDirectoryService } from 'src/app/service/img-directory.service';
 
 @Component({
@@ -9,7 +10,7 @@ import { ImgDirectoryService } from 'src/app/service/img-directory.service';
 export class RoadsideAssistanceComponent implements OnInit{
 pageLoading = true;
 roadAssistanceDetails: any;
-constructor(private imgService: ImgDirectoryService){}
+constructor(private imgService: ImgDirectoryService, private routeUrl: Router){}
 
   ngOnInit(): void {
     this.roadAssistanceDetails = this.imgService.roadAssistanceInfo;
@@ -17,5 +18,8 @@ constructor(private imgService: ImgDirectoryService){}
     setTimeout(() => {
       this.pageLoading = false;
     }, 3000);
+  }
+  backUrl() {
+    this.routeUrl.navigateByUrl('/project-list');
   }
 }

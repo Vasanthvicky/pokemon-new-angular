@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faFirefoxBrowser, faLinkedin, faMailchimp, faPhoenixSquadron } from '@fortawesome/free-brands-svg-icons';
+import { faFirefoxBrowser, faGithub, faLinkedin, faMailchimp, faPhoenixSquadron } from '@fortawesome/free-brands-svg-icons';
 import * as fabIcons  from "@fortawesome/free-solid-svg-icons";
 import { faBirthdayCake, faCalendarDays, faFlag, faHeadphonesSimple, faMailBulk, faMailReply, faVoicemail, faWindowClose } from '@fortawesome/free-solid-svg-icons';
 
@@ -15,6 +15,7 @@ export class ContactComponent implements OnInit {
   myPhoneIcon = faHeadphonesSimple;
   myFlag = faFlag;
   myPortfolio = faFirefoxBrowser;
+  myGitHub = faGithub;
 
   pageLoading = true;
 

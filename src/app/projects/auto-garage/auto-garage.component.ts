@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ImgDirectoryService } from 'src/app/service/img-directory.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-auto-garage',
@@ -9,12 +10,16 @@ import { ImgDirectoryService } from 'src/app/service/img-directory.service';
 export class AutoGarageComponent implements OnInit{
 projectDetails: any;
 pageLoading = true;
-constructor(private imgService: ImgDirectoryService){}
-ngOnInit(): void {
-  this.projectDetails = this.imgService.autoGarageInfo;
+constructor(private imgService: ImgDirectoryService,
+  private routeUrl: Router){}
+  ngOnInit(): void {
+    this.projectDetails = this.imgService.autoGarageInfo;
 
-  setTimeout(() => {
-    this.pageLoading = false;
-  }, 3000)
-}
+    setTimeout(() => {
+      this.pageLoading = false;
+    }, 3000)
+  }
+  backUrl() {
+    this.routeUrl.navigateByUrl('/project-list');
+  }
 }
